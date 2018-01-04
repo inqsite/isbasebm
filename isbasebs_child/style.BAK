@@ -1,0 +1,49 @@
+ /*
+ Theme Name:   isbasebs Child
+ Template:     isbasebs
+ Version:      1.0.0
+
+*/
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+
+body {
+  background-color: #E9A632;
+}
+
+.site {
+  background-color: #F5ECD6;
+  margin-top: 74px;
+  height: 100vh;
+}
+
+#menu-main-menu {
+  background-color: #E07B31;
+  font-size: 16px;
+}
+
+.nav>li>a {
+  color: #ffffff;
+}
+
+.nav>li>a:hover {
+  background-color: #F4D2B7;
+  color: #000000;
+}
+
+
+/*--------------------------------------------------------------
+## media screen and (min-width: 768px)
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) {

@@ -1,0 +1,403 @@
+  /*
+Theme Name: isbasebs
+Theme URI: 
+Author: Underscores.me
+Author URI: 
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: 
+Text Domain: isbase
+Tags:
+*/
+  /*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+  /* Text meant only for screen readers. */
+  
+  .screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+  
+  .screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
+  }
+  /* Do not show the outline on the skip link target. */
+  
+  #content[tabindex="-1"]:focus {
+    outline: 0;
+  }
+  /*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+  
+  .alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+  }
+  
+  .alignright {
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
+  }
+  
+  .aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+  
+  .page-content .wp-smiley,
+  .entry-content .wp-smiley,
+  .comment-content .wp-smiley {
+    border: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+  }
+  /* Make sure embeds and iframes fit their containers. */
+  
+  embed,
+  iframe,
+  object {
+    max-width: 100%;
+  }
+  /*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+  
+  .wp-caption {
+    margin-bottom: 1.5em;
+    max-width: 100%;
+  }
+  
+  .wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .wp-caption .wp-caption-text {
+    margin: 0.8075em 0;
+  }
+  
+  .wp-caption-text {
+    text-align: center;
+  }
+  /*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+  
+  .gallery {
+    margin-bottom: 1.5em;
+  }
+  
+  .gallery-item {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+  }
+  
+  .gallery-columns-2 .gallery-item {
+    max-width: 50%;
+  }
+  
+  .gallery-columns-3 .gallery-item {
+    max-width: 33.33%;
+  }
+  
+  .gallery-columns-4 .gallery-item {
+    max-width: 25%;
+  }
+  
+  .gallery-columns-5 .gallery-item {
+    max-width: 20%;
+  }
+  
+  .gallery-columns-6 .gallery-item {
+    max-width: 16.66%;
+  }
+  
+  .gallery-columns-7 .gallery-item {
+    max-width: 14.28%;
+  }
+  
+  .gallery-columns-8 .gallery-item {
+    max-width: 12.5%;
+  }
+  
+  .gallery-columns-9 .gallery-item {
+    max-width: 11.11%;
+  }
+  
+  .gallery-caption {
+    display: block;
+  }
+  /*--------------------------------------------------------------
+## inqsite customize
+--------------------------------------------------------------*/
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body,
+  button,
+  input,
+  select,
+  textarea {
+      font-family: "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
+  font-weight: 500;
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4 {
+      font-family: "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
+  font-weight: 500;
+  }
+  
+  h1,
+  .h1 {
+    font-size: 24px;
+    font-size: 2.4rem;
+    margin: 0.5em 0;
+  }
+  
+  h2,
+  .h2 {
+    font-size: 22px;
+    font-size: 2.2rem;
+    margin: 0.5em 0;
+  }
+  
+  h3,
+  .h3 {
+    font-size: 20px;
+    font-size: 2.0rem;
+    margin: 0.5em 0;
+  }
+  
+  h4,
+  .h4 {
+    font-size: 18px;
+    font-size: 1.8rem;
+    margin: 0.5em 0;
+  }
+  
+  h5,
+  .h5 {
+    font-size: 16px;
+    font-size: 1.6rem;
+    margin: 0.5em 0;
+  }
+  
+  h6,
+  .h5 {
+    font-size: 14px;
+    font-size: 1.4rem;
+    margin: 0.5em 0;
+  }
+  
+  body {
+    background-color: #fefefe;
+  }
+  
+  input[type="search"] {
+    width: 100%;
+  }
+  
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+  
+  .site-branding {
+    padding: 1px 20px 0;
+  }
+  
+  .site-main article {
+    padding: 1px 20px 30px;
+    ;
+    margin-bottom: 20px;
+  }
+  
+  .page-header {
+    padding-bottom: 0;
+    margin: 0 0 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .clearfix:before,
+  .clearfix:after {
+    content: " ";
+    display: table;
+  }
+  
+  .clearfix:after {
+    clear: both;
+  }
+  
+  .clearfix {
+    *zoom: 1;
+  }
+  /* breadcrumbs */
+  
+  .breadcrumbs {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .breadcrumbs li {
+    display: inline;
+  }
+  
+  .breadcrumbs li::before {
+    content: "\f07b";
+    font-family: FontAwesome;
+  }
+  
+  .breadcrumbs li:first-child::before {
+    content: "\f015";
+    font-family: FontAwesome;
+  }
+  
+  .breadcrumbs li:last-child::before {
+    content: "\f15c";
+    font-family: FontAwesome;
+  }
+  /*flexbox*/
+  
+  .flex {
+    display: block;
+  }
+  
+  // Z-levels
+  .z-depth-0 {
+    box-shadow: none !important;
+  }
+  
+  .z-depth-1 {
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+  .z-depth-2 {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.18), 0 3px 10px 0 rgba(0, 0, 0, 0.15);
+  }
+  /*--------------------------------------------------------------
+## inqsite bootstrap customize
+--------------------------------------------------------------*/
+  
+  a,
+  a:hover,
+  a:focus {
+    color: #039be5;
+  }
+  h1 a,
+  h2 a,
+  h3 a,
+  h4 a,
+  h5 a,
+  h6 a,
+  .h1 a,
+  .h2 a,
+  .h3 a,
+.h4 a {
+    color:#000000;
+  }
+  
+  .container {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  
+  .row {
+    margin-left: -1%;
+    margin-right: -1%;
+  }
+  
+  div[class^="col-"] {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  
+  .list-group .list-group-item {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.121569);
+    margin-bottom: -1px;
+    padding: 0.75rem 1.25rem;
+  }
+  
+  .list-group-item:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  
+  .list-group-item:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-bottom: 0;
+  }
+  /*--------------------------------------------------------------
+## media screen and (min-width: 768px)
+--------------------------------------------------------------*/
+  
+  @media screen and (min-width: 768px) {
+
+    /*flexbox*/
+    .flex {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+    .navbar-brand {
+      display: none;
+    }
+    .navbar-collapse {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
